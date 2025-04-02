@@ -1,5 +1,7 @@
 # 🚀 Continuous Delivery Pipeline with GitHub, CodeBuild, CodePipeline, and AWS Elastic Beanstalk
 
+![architechture](steps/project.png)
+
 This project demonstrates how to implement a **Continuous Delivery (CD) Pipeline** using **AWS Elastic Beanstalk**, **AWS CodePipeline**, **AWS CodeBuild**, and **GitHub** as the source repository. The pipeline automates the process of building and deploying a sample application to Elastic Beanstalk whenever changes are pushed to the GitHub repository.
 
 ---
@@ -63,8 +65,9 @@ Make sure to create and attach an **IAM Role** with appropriate permissions for 
 ![Step 1h](steps/step1i.png)
 
 ---
+---
 
-### 🛠️ Step 2: Create a CodeBuild Project
+### ✅ Step 2: Create a CodeBuild Project
 
 1. Open **AWS CodeBuild** and create a new project.
 
@@ -77,17 +80,6 @@ Make sure to create and attach an **IAM Role** with appropriate permissions for 
 ![steps2](steps/step2c.png)
   
 3. Define the **buildspec commands** from below example.
-
-Example `buildspec.yml`:
-```yaml
-version: 0.2
-phases:
-  build:
-    commands:
-      - npm i --save
-artifacts:
-  files:
-    - '**/*'
 
 ![steps2](steps/step2c2.png)
 
@@ -104,8 +96,9 @@ artifacts:
 ![steps2](steps/step2cf.png)
 
 ---
+---
 
-### 🛠️ Step 3: Create a CodePipeline Project
+### ✅ Step 3: Create a CodePipeline Project
 
 1. Open AWS CodePipeline and create a new pipeline.
 
@@ -138,3 +131,5 @@ artifacts:
 5. Verify Deployment.
 
 ![steps3](steps/step3i.png)
+
+---
