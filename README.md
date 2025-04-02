@@ -81,16 +81,6 @@ Make sure to create and attach an **IAM Role** with appropriate permissions for 
   
 3. Define the **buildspec commands** from below example.
 
-```yaml
-version: 0.2
-phases:
-  build:
-    commands:
-      - npm i --save
-artifacts:
-  files:
-    - '**/*'
-
 ![steps2](steps/step2cf.png)
 
 4. Click on Create Build Project.
