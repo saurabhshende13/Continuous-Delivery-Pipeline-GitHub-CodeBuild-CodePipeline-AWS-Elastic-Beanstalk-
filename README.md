@@ -96,7 +96,7 @@ artifacts:
 
 4. Click on Create Build Project.
 
-![steps2](steps/step2cd.png)
+![steps2](steps/step2d.png)
 
 5. Start Build and Verify logs.
 
