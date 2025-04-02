@@ -81,9 +81,17 @@ Make sure to create and attach an **IAM Role** with appropriate permissions for 
   
 3. Define the **buildspec commands** from below example.
 
-![steps2](steps/step2c2.png)
+```yaml
+version: 0.2
+phases:
+  build:
+    commands:
+      - npm i --save
+artifacts:
+  files:
+    - '**/*'
 
-![steps2](steps/step2c3.png)
+![steps2](steps/step2cf.png)
 
 4. Click on Create Build Project.
 
@@ -133,3 +141,71 @@ Make sure to create and attach an **IAM Role** with appropriate permissions for 
 ![steps3](steps/step3i.png)
 
 ---
+
+---
+### ✅ Step 4: Create a Stage for Manual Approval
+
+![steps4](steps/step4a.png)
+
+![steps4](steps/step4b.png)
+
+![steps4](steps/step4c.png)
+
+![steps4](steps/step4d.png)
+
+![steps4](steps/step4e.png)
+
+![steps4](steps/step4f.png)
+
+---
+
+---
+
+✅ Final Outcome
+Once everything is configured:
+
+- Any code push to GitHub will trigger the CodePipeline.
+
+- CodeBuild will install dependencies and package the app.
+
+- Manual Approval will be required at this stage.
+
+- CodePipeline will deploy the application to Elastic Beanstalk.
+
+---
+
+---
+
+📂 Project Structure
+
+---
+
+---
+
+🔐 IAM Policy Summary
+Ensure the IAM roles used for CodeBuild and CodePipeline include:
+
+AWSElasticBeanstalkReadOnly
+
+AWSElasticBeanstalkWebTier
+
+AWSElasticBeanstalkWorkerTier
+
+CodePipeline execution
+
+CodeBuild execution
+
+---
+
+---
+
+🙌 Contributions & Feedback
+Pull requests and suggestions are welcome. Fork it, improve it, and share back!
+
+---
+
+---
+
+📬 Contact
+Author: Saurabh Shende
+📧 saurabhshende13@gmail.com
