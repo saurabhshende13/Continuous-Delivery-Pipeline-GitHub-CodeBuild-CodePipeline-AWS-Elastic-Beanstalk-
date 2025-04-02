@@ -151,7 +151,8 @@ Make sure to create and attach an **IAM Role** with appropriate permissions for 
 
 ---
 
-✅ Final Outcome
+**✅ Final Outcome**
+
 Once everything is configured:
 
 - Any code push to GitHub will trigger the CodePipeline.
@@ -166,36 +167,15 @@ Once everything is configured:
 
 ---
 
-📂 Project Structure
+**📂 Project Structure**
+├── app.js                     # Application source code
+├── package.json               # Node.js dependencies and scripts
+├── README.md                  # Project documentation
+└── steps/                     # Project ScreenShots
 
 ---
-
 ---
 
-🔐 IAM Policy Summary
-Ensure the IAM roles used for CodeBuild and CodePipeline include:
-
-AWSElasticBeanstalkReadOnly
-
-AWSElasticBeanstalkWebTier
-
-AWSElasticBeanstalkWorkerTier
-
-CodePipeline execution
-
-CodeBuild execution
-
----
-
----
-
-🙌 Contributions & Feedback
-Pull requests and suggestions are welcome. Fork it, improve it, and share back!
-
----
-
----
-
-📬 Contact
+**📬 Contact**
 Author: Saurabh Shende
 📧 saurabhshende13@gmail.com
