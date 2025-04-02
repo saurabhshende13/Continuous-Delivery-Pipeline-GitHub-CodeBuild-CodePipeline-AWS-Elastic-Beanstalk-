@@ -100,9 +100,9 @@ artifacts:
 
 5. Start Build and Verify logs.
 
-![steps2](steps/step2ce.png)
+![steps2](steps/step2e.png)
 
-![steps2](steps/step2cf.png)
+![steps2](steps/step2f.png)
 
 ---
 ---
@@ -159,7 +159,6 @@ artifacts:
 ![steps4](steps/step4f.png)
 
 ---
-
 ---
 
 **✅ Final Outcome**
@@ -174,15 +173,6 @@ Once everything is configured:
 
 - CodePipeline will deploy the application to Elastic Beanstalk.
 
----
-
----
-
-**📂 Project Structure**
-├── app.js                     # Application source code
-├── package.json               # Node.js dependencies and scripts
-├── README.md                  # Project documentation
-└── steps/                     # Project ScreenShots
 
 ---
 ---
@@ -190,3 +180,5 @@ Once everything is configured:
 **📬 Contact**
 Author: Saurabh Shende
 📧 saurabhshende13@gmail.com
+
+---
